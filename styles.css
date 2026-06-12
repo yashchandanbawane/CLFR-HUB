@@ -1,0 +1,798 @@
+/* ===== Body Styling ===== */
+body {
+    margin: 0;  
+    font-family: 'Segoe UI', Tahoma, Geneva, VerDana, sans-serif;
+}
+
+/* ===== Background img ===== */
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("desi\ darkblue.jpg"); /* Sab pages ke liye same */
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+
+/* Sirf Home page ka alag background */
+.home {
+  background-image: url("seedream-4.5_a_vo_primium_likha_hii.jpeg");
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    position: fixed;          
+    width: 95%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.6);  
+    backdrop-filter: blur(5px);  
+    z-index: 1000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ===== Logo Styling ===== */
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative', serif;
+
+}
+
+/* ===== Menu List ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Menu Links ===== */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* ===== Underline Animation ===== */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+
+    color: rgb(66, 181, 137);
+    text-align: top;
+    margin-top: -50px;   /* Navbar ke niche adjust */
+    font-size: 50px;
+}
+
+/* ===== Section Spacing (About etc.) ===== */
+section {
+    padding: 100px 20px;
+    color: white;
+}
+
+/* ===== Hero Section Styling ===== */
+.hero {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;   /* Text center me karega */
+    color: white;         /* Text color white */
+    margin-top: 70px;    /* Navbar ke niche space */
+}
+
+/* ===== Tagline Styling ===== */
+.tagline {
+    font-size: 20px;      /* Text size */
+    margin-top: 10px;     /* Heading ke niche space */
+}
+
+/* ===== Button Styling ===== */
+.btn {
+    display: inline-block;     /* Button jaisa behave kare */
+    margin-top: 20px;
+    padding: 10px 25px;        /* Andar space */
+    background: #00bfff;       /* Button color */
+    color: white;              /* Text color */
+    text-decoration: none;     /* Underline remove */
+    border-radius: 5px;        /* Round corners */
+    transition: 0.3s;          /* Smooth hover effect */
+}
+
+/* ===== Button Hover Effect ===== */
+.btn:hover {
+    background: #009acd;       /* Hover pe color change */
+}
+
+/* ===== Features Section Layout ===== */
+.features {
+    display: flex;             /* Cards side by side */
+    justify-content: center;   /* Center align */
+    gap: 30px;                 /* Cards ke beech space */
+    margin: 100px 50px;        /* Upar aur side space */
+}
+
+/* ===== Card Design ===== */
+.card {
+    background: rgba(255,255,255,0.1); /* Transparent background */
+    backdrop-filter: blur(8px);        /* Glass effect */
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;                  /* Hover animation smooth */
+}
+
+/* ===== Card Hover Animation ===== */
+.card:hover {
+    transform: translateY(-10px);  /* Upar move hoga */
+}
+
+
+
+/* ===== About Section Main ===== */
+.about {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+
+    /* Entry Animation */
+    animation: fadeUp 1.5s ease;
+}
+
+/* ===== About Heading ===== */
+.about-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* ===== Description ===== */
+.about-desc {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* ===== Mission & Vision Layout ===== */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* ===== Box Design ===== */
+.box {
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== Stats Section ===== */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Stats Box */
+.stat-box h3 {
+    font-size: 30px;
+    color: #00ffff;
+}
+
+/* ===== Founder Section ===== */
+.founder {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* ===== Animation Keyframe ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===== Page Title ===== */
+.page-title {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    font-size: 35px;
+}
+
+/* ===== Papers Layout ===== */
+/* ===== Papers Section ===== */
+.papers-section {
+    padding: 80px 5%;
+    text-align: center;
+    background: radial-gradient(circle at top, #0a1428, #050d1a);
+    min-height: 100vh;
+}
+
+/* ===== Heading ===== */
+.section-title {
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 60px;
+    font-family: 'Georgia', serif;
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+}
+
+/* ===== Container - 3 Cards in 1 Row ===== */
+.papers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ===== Card ===== */
+.paper-card {
+    background: #1a2942;
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Card Hover (Cyan Glow) ===== */
+.paper-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(0, 230, 255, 0.5),
+                0 0 60px rgba(0, 230, 255, 0.2);
+    background: #1f314f;
+}
+
+/* ===== Card Title ===== */
+.paper-card h3 {
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-family: 'Georgia', serif;
+}
+
+/* ===== Card Paragraph ===== */
+.paper-card p {
+    color: #cfd5e0;
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== Download Button ===== */
+.btn-view {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 2px solid #ff2b2b;
+    border-radius: 30px;
+    color: #ff2b2b !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* ===== Button Hover ===== */
+.btn-view:hover {
+    background: #ff2b2b;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(255, 43, 43, 0.6);
+    transform: translateY(-3px);
+}
+
+/* ===== Notes Section Layout ===== */
+
+/* ===== NOTES SECTION GRID ===== */
+.notes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 80px 5%;
+}
+
+/* ===== CARD ===== */
+.note-card {
+    background: #19253d;
+    padding: 40px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.4s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,255,255,0.4);
+}
+
+.note-card h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.note-card p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.note-btn {
+    padding: 10px 25px;
+    border: 2px solid red;
+    color: red;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.note-btn:hover {
+    background: red;
+    color: white;
+}
+
+
+/* ===== Software Card Design ===== */
+/* ===== SOFTWARE SECTION TILE GRID ===== */
+.software {
+    padding: 120px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ===== TILE CARD ===== */
+.software-card {
+    position: relative;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #111;
+    transition: 0.4s ease;
+}
+
+/* ===== IMAGE FULL BACKGROUND ===== */
+.software-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+/* ===== DARK OVERLAY ===== */
+.software-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+    transition: 0.4s ease;
+}
+
+/* ===== TITLE ===== */
+.software-card h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+    transition: 0.4s ease;
+}
+
+/* ===== DESCRIPTION ===== */
+.software-card p {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #ddd;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+    z-index: 2;
+}
+
+/* ===== DOWNLOAD BUTTON ===== */
+.software-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    padding: 6px 16px;
+    background: #00bcd4;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+    z-index: 2;
+}
+
+.software-btn:hover {
+    background: #0097a7;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.software-card:hover img {
+    transform: scale(1.1);
+}
+
+.software-card:hover::after {
+    background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.4));
+}
+
+.software-card:hover h3 {
+    bottom: 80px;
+}
+
+.software-card:hover p,
+.software-card:hover .software-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.software-card:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+
+
+
+
+/* ===== Windows Section Layout ===== */
+.windows {
+    padding: 120px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.windows-card {
+    position: relative;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #111;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.windows-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.windows-card h3 {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.windows-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 6px 15px;
+    background: #0078d7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.windows-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.windows-card:hover img {
+    transform: scale(1.1);
+}
+
+.windows-card:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+
+/* ===== Useful Section Layout ===== */
+/* ===== Glass + Neon Hybrid ===== */
+.useful-section {
+    padding: 120px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+.useful-card {
+    position: relative;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+/* Electric Blue Border */
+.useful-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(90deg, #00bfff, #00ffff, #007bff);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+/* Hover Effect */
+.useful-card:hover::before {
+    opacity: 1;
+}
+
+.useful-card:hover {
+    transform: translateY(-12px);
+    box-shadow:
+        0 0 20px #00bfff,
+        0 0 40px rgba(0,191,255,0.6);
+}
+
+/* Logo */
+.useful-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.useful-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Title */
+.useful-card h3 {
+    margin-top: 10px;
+}
+
+
+/* ===== Stylish Visit Button ===== */
+.visit-btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: 10px;
+
+    color: #00bfff;
+    border: 2px solid #00bfff;
+    background: transparent;
+
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+/* Electric Glow Hover */
+.visit-btn:hover {
+    background: #00bfff;
+    color: white;
+
+    box-shadow:
+        0 0 10px #00bfff,
+        0 0 20px #00bfff,
+        0 0 40px rgba(0,191,255,0.8);
+
+    transform: scale(1.08);
+}
+
+
+
+
+/* ===== Free Courses Layout ===== */
+
+
+/* ==========================================
+   MARQUEE STYLING FOR CLFR HUB
+   ========================================== */
+
+.notice{
+    
+    /* Background color */
+    background: linear-gradient(90deg, #0a1931, #102542);
+
+    /* Text color */
+    color: #ffd700;
+
+    /* Text size */
+    font-size: 18px;
+
+    /* Text thickness */
+    font-weight: 600;
+
+    /* Top & bottom spacing */
+    padding: 30px 0;
+
+    /* Gold border on top */
+    border-top: 2px solid #131c78;
+
+    /* Gold border on bottom */
+    border-bottom: 2px solid #3e1186;
+
+    /* Space between letters */
+    letter-spacing: 1px;
+
+    /* Font family */
+    font-family: 'Poppins', sans-serif;
+
+    /* Light glow effect */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+
+    /* Convert text to uppercase */
+    text-transform: uppercase;
+
+
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: #0a1931;
+    color: gold;
+    padding: 10px 0;
+
+   
+
+}
+
+
+/* =========================
+   Categories Section
+========================= */
+
+/* =========================
+   Categories Section
+========================= */
+
+.categories{
+    margin-top: 450px;          /* Hero ke niche distance */
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+/* Categories Heading */
+.categories h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Cards Grid */
+.category-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Single Card */
+.card{
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Icon */
+.card span{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Card Title */
+.card h3{
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.card p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/*free Auto Mation*/
+
+
